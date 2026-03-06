@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums, target):
         seen = {}
         for i in range(len(nums)):
             k = target - nums[i]
@@ -7,3 +7,5 @@ class Solution:
                 return seen[k],i
             else:
                 seen[nums[i]]=i
+obj=Solution()
+print(obj.twoSum([7,2,5,8],9))
